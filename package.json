@@ -1,0 +1,30 @@
+{
+    "name": "sublimeSnippet-vscodeSnippet",
+    "publisher": "xiewh7",
+    "displayName": "sublimeSnippet-vscodeSnippet",
+    "description": "a project to convert sublime-snippet to vscode snippet. And build your vscode extension",
+    "version": "0.0.1",
+    "repository": "https://github.com/xiewh7/sublimeSnippet-vscodeSnippet.git",
+    "scripts": {
+        "convert": "node conver",
+        "build": "node convert && vsce package"
+    },
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "devDependencies": {
+        "atomizr": "^0.3.3",
+        "vsce": "^1.87.0"
+    }
+}

@@ -1,0 +1,6 @@
+{
+	"hello": {
+		"prefix": "hello",
+		"body": "=================================\r\nFirst Name: ${1:Guillermo}\r\nSecond Name: ${2:López}\r\nAddress: ${3:Main Street 1234}\r\nUser name: $1\r\nEnvironment Variable : ${4:$TM_FILEPATH }  #可以设置默认占位符为环境变量\r\nTest: ${5:Nested ${6:Placeholder}}\r\n=================================$0"
+	}
+}

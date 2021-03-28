@@ -1,0 +1,14 @@
+<snippet>
+   <content><![CDATA[
+=================================
+First Name: ${1:Guillermo}
+Second Name: ${2:López}
+Address: ${3:Main Street 1234}
+User name: $1
+Environment Variable : ${4:$TM_FILEPATH }  #可以设置默认占位符为环境变量
+Test: ${5:Nested ${6:Placeholder}}
+=================================
+]]></content>
+    <tabTrigger>hello</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
